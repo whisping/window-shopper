@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		232F5429219160E00052953C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F5428219160E00052953C /* AppDelegate.swift */; };
-		232F542B219160E00052953C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F542A219160E00052953C /* ViewController.swift */; };
+		232F542B219160E00052953C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F542A219160E00052953C /* MainVC.swift */; };
 		232F542E219160E00052953C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232F542C219160E00052953C /* Main.storyboard */; };
 		232F5430219160E30052953C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 232F542F219160E30052953C /* Assets.xcassets */; };
 		232F5433219160E30052953C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232F5431219160E30052953C /* LaunchScreen.storyboard */; };
+		232F543D2191675A0052953C /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F543C2191675A0052953C /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		232F5425219160E00052953C /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		232F5428219160E00052953C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		232F542A219160E00052953C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		232F542A219160E00052953C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		232F542D219160E00052953C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		232F542F219160E30052953C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		232F5432219160E30052953C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		232F5434219160E30052953C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232F543C2191675A0052953C /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		232F5427219160E00052953C /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				232F543B219166F50052953C /* Views */,
+				232F543A219163DC0052953C /* Controller */,
 				232F5428219160E00052953C /* AppDelegate.swift */,
-				232F542A219160E00052953C /* ViewController.swift */,
 				232F542C219160E00052953C /* Main.storyboard */,
 				232F542F219160E30052953C /* Assets.xcassets */,
 				232F5431219160E30052953C /* LaunchScreen.storyboard */,
 				232F5434219160E30052953C /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		232F543A219163DC0052953C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				232F542A219160E00052953C /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		232F543B219166F50052953C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				232F543C2191675A0052953C /* CurrencyTxtField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				232F542B219160E00052953C /* ViewController.swift in Sources */,
+				232F543D2191675A0052953C /* CurrencyTxtField.swift in Sources */,
+				232F542B219160E00052953C /* MainVC.swift in Sources */,
 				232F5429219160E00052953C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FRDEJP2KYF;
+				DEVELOPMENT_TEAM = YT424YXXJ8;
 				INFOPLIST_FILE = "window-shopper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FRDEJP2KYF;
+				DEVELOPMENT_TEAM = YT424YXXJ8;
 				INFOPLIST_FILE = "window-shopper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
